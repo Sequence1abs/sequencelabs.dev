@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import { GeistSans } from "geist/font/sans";
 import { globalSeoDefaults } from "@/lib/seo";
 import "./globals.css";
@@ -29,7 +30,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${GeistSans.variable} h-full antialiased`}>
-      <body className={`${GeistSans.className} min-h-full flex flex-col`}>{children}</body>
+      <body className={`${GeistSans.className} min-h-full flex flex-col`}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
