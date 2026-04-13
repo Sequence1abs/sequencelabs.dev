@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { GeistSans } from "geist/font/sans";
+import { globalSeoDefaults } from "@/lib/seo";
 import "./globals.css";
 
 export const viewport: Viewport = {
@@ -9,19 +10,16 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Sequence Labs",
-  description: "Sequence Labs",
+  ...globalSeoDefaults,
   icons: {
     icon: [
-      { url: '/favicon.ico', sizes: 'any' },
-      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
-      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' }
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
     ],
-    apple: [
-      { url: '/apple-touch-icon.png' }
-    ]
+    apple: [{ url: "/apple-touch-icon.png" }],
   },
-  manifest: '/site.webmanifest',
+  manifest: "/site.webmanifest",
 };
 
 export default function RootLayout({
@@ -30,13 +28,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${GeistSans.variable} h-full antialiased`}
-    >
-      <body className={`${GeistSans.className} min-h-full flex flex-col`}>
-        {children}
-      </body>
+    <html lang="en" className={`${GeistSans.variable} h-full antialiased`}>
+      <body className={`${GeistSans.className} min-h-full flex flex-col`}>{children}</body>
     </html>
   );
 }
