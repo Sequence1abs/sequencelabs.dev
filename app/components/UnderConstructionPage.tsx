@@ -51,7 +51,7 @@ function useResponsiveTerminalProps() {
 
 const socialLinks = [
   {
-    href: "https://instagram.com",
+    href: "https://www.instagram.com/sequence3.se/",
     label: "Instagram",
     icon: (
       <svg
@@ -72,7 +72,7 @@ const socialLinks = [
     ),
   },
   {
-    href: "https://linkedin.com",
+    href: "https://www.linkedin.com/company/sequence3/",
     label: "LinkedIn",
     icon: (
       <svg width={20} height={20} viewBox="0 0 24 24" fill="currentColor" aria-hidden>
@@ -81,16 +81,7 @@ const socialLinks = [
     ),
   },
   {
-    href: "https://tiktok.com",
-    label: "TikTok",
-    icon: (
-      <svg width={19} height={19} viewBox="0 0 24 24" fill="currentColor" aria-hidden>
-        <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 0 0-.79-.05A6.34 6.34 0 0 0 3.15 15.2a6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.71a8.35 8.35 0 0 0 4.76 1.49V6.75a4.79 4.79 0 0 1-1-.06z" />
-      </svg>
-    ),
-  },
-  {
-    href: "https://facebook.com",
+    href: "https://www.facebook.com/sq3.io/",
     label: "Facebook",
     icon: (
       <svg width={20} height={20} viewBox="0 0 24 24" fill="currentColor" aria-hidden>
